@@ -1,0 +1,364 @@
+.content-image {
+	width: 100vw;
+	height: 713px;
+	background-image: url(./1639894042_1-abrakadabra-fun-p-fon-mainkraft-png-1\ 1\ \(2\).png);
+	font-size: calc(35px + 55 * (100vw / 1600));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content-text span {
+	font-size: calc(20px + 60 * (100vw / 1600));
+	color: #F0D90C;
+}
+.block-text-content span {
+	font-weight: 600;
+}
+.content-text {
+	font-weight: 600;
+	font-size: calc(15px + 20 * (100vw / 1600));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.block-two {
+	background-color: #255A24;
+}
+.tut {
+	font-weight: 600;
+	color: #DBBD20;
+}
+.block-text {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.block-one {
+	background-color: #2F702A;
+}
+.header-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: calc(10px + 50 * (100vw / 1600));
+	background: #234D3F;
+	width: 100vw;
+	padding: 20px 0px;
+	box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+}
+.block-green {
+	box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.25);
+	width: 100vw;
+	padding: 15px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	font-weight: 300;
+	font-size: calc(12px + 10 * (100vw / 1600));
+	text-align: start;
+}
+.block-image img {
+	width: 400px;
+}
+.block-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.block-header {
+	font-weight: 600;
+	font-size: calc(15px + 30 * (100vw / 1600));
+	display: flex;
+}
+
+
+.block-white {
+	background-color: #fff;
+	width: 100vw;
+	height: 120px;
+	box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.25);
+	display: flex;
+	align-items: center;
+}
+.block-white-img img {
+	width: 64px;
+	height: 64px;
+}
+.block-white-img {
+	margin-left: 100px;
+}
+.block-white-text-content {
+	margin-left: 30px;
+}
+.block-white-text{
+	color: #000000;
+	font-size: 16px;
+	font-weight: 300;
+}
+.block-white-header {
+	color: #000000;
+	font-size: 25px;
+}
+
+.content-brown {
+	background-color: #5F3F1F;
+	padding: 50px 0px;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.brown-header {
+	font-weight: 600;
+	font-size: calc(25px + 50 * (100vw / 1600));
+}
+.brown-grid {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	width: 100vw;
+	justify-items: center;
+}
+.brown-card {
+	background: rgba(0, 0, 0, 0.50);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+	width: 230px;
+	height: 370px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: ease 0.3s all;
+}
+.brown-card:hover {
+	transform: scale(1.01)
+}
+.brown-card-header {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 18px;
+	margin-top: 40px;
+}
+.brown-card-name {
+	font-size: 20px;
+	font-weight: 300;
+	padding: 5px 0px;
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #6A3B0C;
+	margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+	.block-image img {
+		transform: scale(0.8)
+	}
+	.block-text {
+		margin-left: 10px;
+	}
+.block-white {
+	height: 100px;
+}
+.block-white-img img {
+	width: 50px;
+	height: 50px;
+}
+.block-white-img {
+	margin-left: 70px;
+}
+.block-white-text-content {
+	margin-left: 25px;
+}
+
+.block-white-text {
+	font-size: 13px;
+}
+.block-white-header {
+	font-size: 20px;
+}
+}
+@media screen and (max-width: 750px) {
+	.block-image img {
+		transform: scale(0.6)
+	}
+	.block-text {
+		margin-left: 10px;
+	}
+	.block-green {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		height: 300px;
+	}
+.brown-grid {
+	margin-top: 40px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+.brown-card {
+	transform: scale(0.8);
+}
+.brown-card:hover {
+	transform: scale(0.9);
+}
+.block-white {
+	height: 120px;
+}
+
+.block-white-img img {
+	width: 50px;
+	height: 50px;
+}
+
+.block-white-img {
+	margin-left: 50px;
+}
+
+.block-white-text-content {
+	margin-left: 20px;
+}
+
+.block-white-text {
+	font-size: 11px;
+}
+
+.block-white-header {
+	font-size: 17px;
+}
+	
+}
+@media screen and (max-width: 500px) {
+	.content-image {
+		display: none;
+	}
+.block-white {
+		height: 150px;
+	}
+
+	.block-white-img img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.block-white-img {
+		margin-left: 30px;
+	}
+
+	.block-white-text-content {
+		margin-left: 15px;
+	}
+
+	.block-white-text {
+		font-size: 10px;
+	}
+
+	.block-white-header {
+		font-size: 14px;
+	}
+.brown-grid {
+	margin-top: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.brown-card {
+	transform: scale(0.7);
+}
+
+.brown-card:hover {
+	transform: scale(0.8);
+}
+}
+.join-block {
+	width: 100vw;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+}
+.join-text {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.join-header {
+	font-size: 50px;
+	font-weight: 500;
+	margin-top: 20px;
+}
+.join-version {
+	font-size: 30px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+.join-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 40px;
+}
+.join-button {
+	color: #1D3D3B;
+	font-size: 30px;
+	padding: 15px 9px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	text-decoration: none;
+	transition: 0.3s ease all;
+}
+.join-button:hover {
+	box-shadow: 0px 0px 10.008px 0px #fff;
+}
+.block-content {
+	width: 100vw;
+}
+.blocks-image {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 900px;
+	background-image: url("./images/1675373253_foni-club-p-fon-zadnii-derevnya-mainkraft-1 1.png");
+}
+.blocks-image-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.text-name {
+	color: #E2B61A;
+	font-size: calc(40px + 70 * (100vw / 1600));
+	font-family: 'Audiowide', sans-serif;
+}
+.text-description {
+	font-size: calc(20px + 25 * (100vw / 1600));
+	font-weight: 600;
+	margin-top: 10px;
+}
+.text-ip {
+	font-size: calc(20px + 25 * (100vw / 1600));
+	font-weight: 400;
+	background: rgba(0, 0, 0, 0.70);
+	padding: 5px 25px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.text-ip span {
+	font-weight: 600;
+}

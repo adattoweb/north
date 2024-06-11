@@ -1,0 +1,208 @@
+.block-content {
+	width: 100vw; 
+	padding: 0px 0px 0px 0px;
+	background-color: #244745;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.block-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100px;
+	font-size: calc(15px + 40 * (100vw / 1600));
+	font-weight: 600;
+}
+.block-header-content{
+	display: flex;
+	justify-content: end;
+}
+.block-quest {
+	width: 500px;
+	height: 180px;
+	background: rgba(0, 0, 0, 0.50);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block-quest-text {
+	font-size: calc(14px + 11 * (100vw / 1600));
+	padding: 10px 15px;
+}
+.block-header-content img {
+	margin-right: 50px;
+}
+.card-zona {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 150px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.50);
+	justify-content: center;
+	align-items: center;
+	width: 440px;
+	padding: 40px 0px 40px 0px;
+}
+.card-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.card-name {
+	font-size: 50px;
+	font-family: 'Audiowide', sans-serif;
+}
+.card-description {
+	font-size: 30px;
+	font-weight: 400;
+}
+.card-button {
+	font-size: 26px;
+	padding: 20px 60px;
+	border-radius: 5px;
+	background: rgba(41, 178, 55, 0.30);
+	transition: 0.3s ease all;
+	cursor: pointer;
+	margin-top: 30px;
+}
+.card-button:hover {
+	box-shadow: 0px 0px 64.008px 0px rgba(41, 178, 55, 0.30)
+}
+.card-error {
+	color: #A0A0A0;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+.card-forms {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+.body {
+	width: 250px;
+	height: 333px;
+	position: absolute;
+	bottom: 0;
+	top: 150px;
+	z-index: 1;
+}
+input::-webkit-input-placeholder {
+	color: #A4A4A4;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+input {
+	border-radius: 7px;
+	background: rgba(0, 0, 0, 0.40);
+	backdrop-filter: blur(2px);
+	color: #ffffff;
+	border-width: 0px;
+	padding: 20px 25px;
+	font-size: 20px;
+	width: 300px;
+	transition: ease 0.3s all;
+}
+
+input:focus {
+	border: none;
+	box-shadow: 0px 0px 64.008px 0px #244745;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.input2 {
+	margin-top: 20px;
+}
+input,
+textarea {
+	outline: none;
+	border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+@media screen and (max-width: 1100px) {
+	.block-header-content img {
+	transform: scale(0.9);
+}
+	.block-quest {
+		transform: scale(0.9);
+	}
+	.body {
+
+	}
+}
+@media screen and (max-width: 1050px) {
+	.block-header-content img {
+	display: none;
+}
+	.block-quest {
+		display: none;
+	}
+	.body {
+		transform: scale(0.8);
+	}
+.card-zona {
+	position: relative;
+	bottom: 0px;
+}
+.card {
+	transform: scale(0.8);
+}
+}
+@media screen and (max-width: 1050px) {
+	.body {
+		display: none;
+	}
+.card-zona {
+	position: relative;
+	bottom: 0px;
+}
+.card {
+	transform: scale(0.8);
+}
+}
+@media screen and (max-width: 600px) {
+.card {
+	transform: scale(0.7);
+}
+.card-zona {
+	display: grid;
+	position: static;
+}
+}
+@media screen and (max-width: 400px) {
+	.card {
+	transform: scale(0.55);
+}
+.card-zona {
+	display: grid;
+	position: static;
+}
+}
+@media screen and (max-width: 300px) {
+		.card {
+	transform: scale(0.5);
+}
+.card-zona {
+	display: grid;
+	position: static;
+}
+}

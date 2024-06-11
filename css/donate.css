@@ -1,0 +1,115 @@
+.block-content {
+	background: #244745;
+	padding: 100px 0px 200px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row: 1fr;
+	width: 100vw;
+	justify-items: center;
+	align-items: flex-start;
+}
+.block-header {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	font-size: calc(25px + 30 * (100vw / 1600));
+	font-weight: 600;
+	background: #244745;
+}
+.donate-card {
+	border-radius: 15px;
+	width: 350px;
+	padding: 50px 0px;
+	border: 1px solid #2C7B77;
+	background: rgba(0, 0, 0, 0.50);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.25s ease all;
+}
+.card1:hover {
+	border: 1px solid #226916;
+	box-shadow: 0px 0px 64.008px 0px #226916;
+}
+.card2:hover {
+	border: 1px solid #AD4D2E;
+	box-shadow: 0px 0px 64.008px 0px #ff6600;
+}
+.card3:hover {
+	border: 1px solid #9F27A1;
+	box-shadow: 0px 0px 64.008px 0px #9F27A1;
+}
+.donate-image img {
+	width: 250px;
+}
+.donate-name {
+	font-size: 40px;
+	font-weight: 500;
+}
+.donate-price {
+	font-size: 35px;
+	color: #fff;
+	font-weight: 500;
+	margin-top: 10px;
+}
+.donate-price span {
+	font-size: 20px;
+	font-weight: 400;
+	color: #747474;
+}
+.donate-can {
+	font-weight: 400;
+	font-size: 18px;
+	margin-top: 15px;
+}
+.donate-can li span {
+	color: #E2B61A;
+	font-weight: 600;
+}
+.donate-button {
+	font-size: 24px;
+	border-radius: 4px;
+	background: rgba(41, 178, 55, 0.30);
+	padding: 10px 60px;
+	margin-top: 50px;
+	transition: 0.3s ease all;
+	cursor: pointer;
+}
+.donate-button:hover {
+	box-shadow: 0px 0px 64.008px 0px rgba(41, 178, 55, 0.30);
+}
+@media screen and (max-width: 1200px) {
+	.block-content {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.donate-card {
+		transform: scale(0.9);
+	}
+
+}
+@media screen and (max-width: 750px) {
+	.block-content {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.donate-card {
+		transform: scale(0.8);
+	}
+
+}
+@media screen and (max-width: 700px) {
+	.block-content {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		padding: 50px 0px 50px 0px;
+	}
+	.donate-card {
+		transform: scale(0.7);
+	}
+
+}

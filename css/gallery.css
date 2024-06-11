@@ -1,0 +1,245 @@
+.block1 {
+	background: #244745;
+	width: 100vw;
+	padding: 100px 0px;
+}
+.block1-header {
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: calc(25px + 25 * (100vw / 1600));
+	font-weight: 600;
+}
+.block1-images {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: : 1fr 1fr 1fr;
+	gap: 50px;
+	justify-items: center;
+}
+.block1-images img{
+	transition: 0.3s ease all;
+	width: 400px;
+}
+.block1-text {
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+}
+.block1-text-content {
+	font-weight: 400;
+	font-size: calc(12px + 23 * (100vw / 1600));
+}
+.block1-text-button:hover {
+	box-shadow: 0px 0px 64.008px 0px rgba(41, 178, 55, 0.30);
+}
+@media screen and (max-width: 1300px) {
+	.block1-images {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		gap: 30px;
+	}
+	.block1-images img {
+		transform: scale(0.9);
+	}
+
+}
+@media screen and (max-width: 900px) {
+	.block1-images {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		gap: 10px;
+	}
+	.block1-images img {
+		transform: scale(0.7);
+	}
+	.block1-header {
+		height: 10px;
+	}
+
+}
+@media screen and (max-width: 750px) {
+	.block1-images {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		gap: 10px;
+	}
+	.block1-images img {
+		transform: scale(0.6);
+	}
+
+}
+@media screen and (max-width: 350px) {
+	.block1-images {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		gap: 10px;
+		justify-content: center;
+	}
+	.block1-images img {
+		transform: scale(0.5);
+	}
+
+}
+.block1-text-button {
+	font-size: calc(20px + 20 * (100vw / 1600));
+	font-weight: 500;
+	margin-top: 25px;
+	padding: 15px 30px;
+	border-radius: 5px;
+	z-index: 0;
+	background: rgba(41, 178, 55, 0.30);
+	cursor: pointer;
+	transition: 0.2s ease all;
+}
+.card-zona {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	background:  rgba(13, 43, 41, 0.60);
+	z-index: 1;
+	backdrop-filter: blur(2px);
+	text-align: center;
+}
+.card-zona.active {
+	display: flex;	
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.80);
+	justify-content: center;
+	align-items: center;
+	width: 440px;
+	height: 500px;
+	z-index: 1;
+	position: static;
+}
+.card-close {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 50px;
+}
+.card-close img:hover {
+	transform: scale(1.05);
+}
+.card-close img {
+	cursor: pointer;
+	transition: 0.3s ease all;
+	width: 32px;
+}
+.card-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.card-name {
+	font-size: 50px;
+	font-family: 'Audiowide', sans-serif;
+}
+.card-description {
+	font-size: 30px;
+	font-weight: 400;
+}
+.card-button {
+	font-size: 26px;
+	padding: 20px 60px;
+	border-radius: 5px;
+	background: rgba(41, 178, 55, 0.30);
+	transition: 0.3s ease all;
+	cursor: pointer;
+	margin-top: 40px;
+	font-weight: 500;
+}
+.card-button:hover {
+	box-shadow: 0px 0px 64.008px 0px rgba(41, 178, 55, 0.30)
+}
+.card-error {
+	color: #A0A0A0;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+.card-forms {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+input::-webkit-input-placeholder {
+	color: #A4A4A4;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+input {
+	border-radius: 7px;
+	background: rgba(0, 0, 0, 0.40);
+	backdrop-filter: blur(2px);
+	color: #ffffff;
+	border-width: 0px;
+	padding: 20px 25px;
+	font-size: 20px;
+	width: 300px;
+	transition: ease 0.3s all;
+}
+
+input:focus {
+	border: none;
+	box-shadow: 0px 0px 64.008px 0px #244745;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.input2 {
+	margin-top: 20px;
+}
+input,
+textarea {
+	outline: none;
+	border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+@media screen and (max-width: 1050px) {
+.card {
+	transform: scale(0.8);
+}
+}
+@media screen and (max-width: 1050px) {
+.card {
+	transform: scale(0.8);
+}
+}
+@media screen and (max-width: 600px) {
+.card {
+	transform: scale(0.7);
+}
+}
+@media screen and (max-width: 400px) {
+	.card {
+	transform: scale(0.55);
+}
+}
+@media screen and (max-width: 300px) {
+		.card {
+	transform: scale(0.5);
+}
+}
